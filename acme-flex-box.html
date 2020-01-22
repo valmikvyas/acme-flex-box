@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+        h1{
+            
+        }
+        body{
+            font-family: sans-serifs;
+        }
+        main{
+            height: 100vh;
+            background-color: dodgerblue;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            align-content:space-between;
+            flex-wrap: wrap;
+        }
+
+       div{
+           margin: 1rem;
+           background-color: tomato;
+           justify-content: center;
+       }
+
+       .sm{
+        width: 50px;
+        height: 50px;
+       }
+
+       .md{
+        width: 100px;
+        height: 100px;
+       
+       }
+       .lg{
+        width: 200px;
+        height: 150px;
+       
+       }
+       div{
+           display: flex;
+           align-items: center;
+       }
+
+        @media (max-width: 600px){
+          main {
+            flex-direction:column;
+          }            
+        }
+
+        </style>
+  </head>
+  <body>
+      <h1>ACME Layout</h1>
+      <main>
+        <div></div>
+        
+        <div class = 'md'></div>
+        
+        
+        </main>
+  </body>
+</html>
